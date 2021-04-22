@@ -1,4 +1,4 @@
-# Epx-GDM
+# EpxGDM
 
 This repository contains all scripts used to perform the analyses described in the manuscript entitled: "**_Epigenome Wide Association Study Reveals Methylation Loci Associated with Offspring Gestational Diabetes Mellitus Exposure and Maternal Methylome_**" from Canouil et al., 2021.
 
