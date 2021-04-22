@@ -1,0 +1,28 @@
+here() starts at /disks/PROJECT/EpxGDM_TobyAndrew
+New names:
+* `` -> ...6
+Parsed with column specification:
+cols(
+  Sample_ID = [31mcol_character()[39m,
+  Sample_Plate = [32mcol_double()[39m,
+  Sample_Name = [31mcol_character()[39m,
+  Project = [31mcol_character()[39m,
+  AMP_Plate = [31mcol_character()[39m,
+  Sample_Well = [31mcol_character()[39m,
+  SentrixBarcode_A = [32mcol_double()[39m,
+  SentrixPosition_A = [31mcol_character()[39m,
+  Scanner = [33mcol_logical()[39m,
+  Date_Scan = [33mcol_logical()[39m,
+  Replicate = [33mcol_logical()[39m,
+  Parent1 = [33mcol_logical()[39m,
+  Parent2 = [33mcol_logical()[39m,
+  Gender = [33mcol_logical()[39m,
+  Replicate_1 = [31mcol_character()[39m,
+  Parent1_1 = [33mcol_logical()[39m,
+  Parent2_1 = [33mcol_logical()[39m
+)
+Warning message:
+Duplicated column names deduplicated: 'Replicate' => 'Replicate_1' [15], 'Parent1' => 'Parent1_1' [16], 'Parent2' => 'Parent2_1' [17] 
+[90m# A tibble: 0 x 6[39m
+[90m# … with 6 variables: Sample_ID [3m[90m<chr>[90m[23m, Plate [3m[90m<dbl>[90m[23m, ROW [3m[90m<chr>[90m[23m, COL [3m[90m<dbl>[90m[23m,[39m
+[90m#   Sample_PlateDigit [3m[90m<chr>[90m[23m, Sample_Well [3m[90m<chr>[90m[23m[39m

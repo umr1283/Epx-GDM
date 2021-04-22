@@ -1,0 +1,215 @@
+
+
+processing file: 02-qc_idats_snps.Rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |..                                                                    |   2%
+   inline R code fragments
+
+  |                                                                              |...                                                                   |   5%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |.....                                                                 |   7%
+   inline R code fragments
+
+  |                                                                              |.......                                                               |  10%
+label: sample_sheet
+  |                                                                              |........                                                              |  12%
+  ordinary text without R code
+
+  |                                                                              |..........                                                            |  14%
+label: read_idats
+  |                                                                              |............                                                          |  17%
+  ordinary text without R code
+
+  |                                                                              |.............                                                         |  19%
+label: call_rate
+  |                                                                              |...............                                                       |  21%
+  ordinary text without R code
+
+  |                                                                              |.................                                                     |  24%
+label: call_rate_samples_tab
+  |                                                                              |..................                                                    |  26%
+  ordinary text without R code
+
+  |                                                                              |....................                                                  |  29%
+label: call_rate_samples_fig
+  |                                                                              |......................                                                |  31%
+  ordinary text without R code
+
+  |                                                                              |.......................                                               |  33%
+label: do_cell_composition
+  |                                                                              |.........................                                             |  36%
+  ordinary text without R code
+
+  |                                                                              |...........................                                           |  38%
+label: cell_composition (with options) 
+List of 2
+ $ eval   : language do_cell_composition & FALSE
+ $ results: chr "hide"
+
+  |                                                                              |............................                                          |  40%
+  ordinary text without R code
+
+  |                                                                              |..............................                                        |  43%
+label: cell_composition_fig (with options) 
+List of 1
+ $ eval: language do_cell_composition & FALSE
+
+  |                                                                              |................................                                      |  45%
+  ordinary text without R code
+
+  |                                                                              |.................................                                     |  48%
+label: cell_composition_custom (with options) 
+List of 2
+ $ eval   : symbol do_cell_composition
+ $ results: chr "hide"
+
+snapshotDate(): 2020-04-27
+see ?FlowSorted.CordBloodCombined.450k and browseVignettes('FlowSorted.CordBloodCombined.450k') for documentation
+downloading 1 resources
+retrieving 1 resource
+loading from cache
+[convertArray] Casting as IlluminaHumanMethylationEPIC
+Loading required package: IlluminaHumanMethylation450kmanifest
+snapshotDate(): 2020-04-27
+see ?FlowSorted.Blood.EPIC and browseVignettes('FlowSorted.Blood.EPIC') for documentation
+downloading 1 resources
+retrieving 1 resource
+loading from cache
+  |                                                                              |...................................                                   |  50%
+  ordinary text without R code
+
+  |                                                                              |.....................................                                 |  52%
+label: cell_composition_fig_custom (with options) 
+List of 1
+ $ eval: symbol do_cell_composition
+
+  |                                                                              |......................................                                |  55%
+  ordinary text without R code
+
+  |                                                                              |........................................                              |  57%
+label: do_check_gender
+  |                                                                              |..........................................                            |  60%
+  ordinary text without R code
+
+  |                                                                              |...........................................                           |  62%
+label: gender_check_computation (with options) 
+List of 1
+ $ eval: symbol do_check_gender
+
+  |                                                                              |.............................................                         |  64%
+  ordinary text without R code
+
+  |                                                                              |...............................................                       |  67%
+label: gender_check_threshold (with options) 
+List of 1
+ $ eval: symbol do_check_gender
+
+  |                                                                              |................................................                      |  69%
+  ordinary text without R code
+
+  |                                                                              |..................................................                    |  71%
+label: gender_check_fig (with options) 
+List of 1
+ $ eval: symbol do_check_gender
+
+  |                                                                              |....................................................                  |  74%
+  ordinary text without R code
+
+  |                                                                              |.....................................................                 |  76%
+label: discrepancy_table (with options) 
+List of 1
+ $ eval: symbol do_check_gender
+
+  |                                                                              |.......................................................               |  79%
+  ordinary text without R code
+
+  |                                                                              |.........................................................             |  81%
+label: discrepancy_samples_table (with options) 
+List of 1
+ $ eval: symbol do_check_gender
+
+  |                                                                              |..........................................................            |  83%
+  ordinary text without R code
+
+  |                                                                              |............................................................          |  86%
+label: normalisation (with options) 
+List of 1
+ $ results: chr "hide"
+
+Found156batches
+Adjusting for0covariate(s) or covariate level(s)
+Standardizing Data across genes
+Fitting L/S model and finding priors
+Finding parametric adjustments
+Adjusting the Data
+
+  |                                                                              |..............................................................        |  88%
+  ordinary text without R code
+
+  |                                                                              |...............................................................       |  90%
+label: export
+  |                                                                              |.................................................................     |  93%
+  ordinary text without R code
+
+  |                                                                              |...................................................................   |  95%
+label: pca (with options) 
+List of 1
+ $ eval: language params[["pca"]]
+
+[rain] PCA started ...
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+[rain] PCA ended.
+[rain] PCA started ...
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+Too few points to calculate an ellipse
+[rain] PCA ended.
+  |                                                                              |....................................................................  |  98%
+  ordinary text without R code
+
+  |                                                                              |......................................................................| 100%
+label: session_info (with options) 
+List of 1
+ $ results: chr "markup"
+
+
+output file: /disks/DATATMP/EpxGDM_TobyAndrew/02-qc_idats_snps/02-qc_idats_snps.knit.md
+
+/usr/lib/rstudio-server/bin/pandoc/pandoc +RTS -K512m -RTS /disks/DATATMP/EpxGDM_TobyAndrew/02-qc_idats_snps/02-qc_idats_snps.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output /disks/PROJECT/EpxGDM_TobyAndrew/reports/EpxGDM_EPIC_QC_SNPs.html --email-obfuscation none --self-contained --wrap preserve --standalone --section-divs --table-of-contents --toc-depth 2 --variable toc_float=1 --variable toc_selectors=h1,h2 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /usr/local/lib/R/site-library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:simplex' --include-in-header /tmp/Rtmpd2Cdaa/rmarkdown-str15db753b2f942.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua 
+
+Output created: reports/EpxGDM_EPIC_QC_SNPs.html
+There were 50 or more warnings (use warnings() to see the first 50)

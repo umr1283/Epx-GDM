@@ -1,0 +1,1523 @@
+here() starts at /disks/PROJECT/EpxGDM_TobyAndrew
+[rain] Formating VCFs ...
+
+VCFtools - UNKNOWN
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+
+VCFtools - UNKNOWN
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+
+VCFtools - UNKNOWN
+
+VCFtools - UNKNOWN
+
+VCFtools - UNKNOWN
+
+VCFtools - UNKNOWN
+
+VCFtools - UNKNOWN
+Parameters as interpreted:
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+(C) Adam Auton and Anthony Marcketta 2009
+
+(C) Adam Auton and Anthony Marcketta 2009
+
+(C) Adam Auton and Anthony Marcketta 2009
+
+(C) Adam Auton and Anthony Marcketta 2009
+
+(C) Adam Auton and Anthony Marcketta 2009
+
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr5.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr8.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+Parameters as interpreted:
+Parameters as interpreted:
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr7.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+Parameters as interpreted:
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr10.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr1.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr6.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr3.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr4.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr9.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--maf 0.01
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr2.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--recode
+	--recode
+	--maf 0.01
+	--recode
+	--maf 0.01
+	--maf 0.01
+	--stdout
+	--maf 0.01
+	--stdout
+	--recode
+	--maf 0.01
+	--stdout
+	--recode
+	--stdout
+	--maf 0.01
+	--recode
+	--maf 0.01
+	--recode
+
+
+	--stdout
+	--recode
+
+	--stdout
+
+	--recode
+	--stdout
+	--recode
+	--stdout
+
+	--stdout
+
+	--stdout
+
+	--stdout
+
+
+
+
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+After filtering, kept 2504 out of 2504 Individuals
+After filtering, kept 2504 out of 2504 Individuals
+After filtering, kept 2504 out of 2504 Individuals
+After filtering, kept 2504 out of 2504 Individuals
+After filtering, kept 2504 out of 2504 Individuals
+After filtering, kept 2504 out of 2504 Individuals
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+Outputting VCF file...
+Outputting VCF file...
+Outputting VCF file...
+Outputting VCF file...
+Outputting VCF file...
+Outputting VCF file...
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+After filtering, kept 586428 out of a possible 3560687 Sites
+Run Time = 1511.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/9.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr9/study/excluded_9.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1686471 out of a possible 1686471 Sites
+Run Time = 51.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/9.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr9/study/excluded_9.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 668153 out of a possible 4045628 Sites
+Run Time = 1712.00 seconds
+After filtering, kept 680796 out of a possible 3992219 Sites
+Run Time = 1714.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/11.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr11/study/excluded_11.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/10.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr10/study/excluded_10.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1936990 out of a possible 1936990 Sites
+Run Time = 61.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/11.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr11/study/excluded_11.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 1927503 out of a possible 1927503 Sites
+Run Time = 60.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/10.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr10/study/excluded_10.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 745775 out of a possible 4597105 Sites
+Run Time = 1943.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/8.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr8/study/excluded_8.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 795394 out of a possible 4716715 Sites
+Run Time = 2019.00 seconds
+After filtering, kept 2242705 out of a possible 2242705 Sites
+Run Time = 70.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/8.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr8/study/excluded_8.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/7.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr7/study/excluded_7.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 2289305 out of a possible 2289305 Sites
+Run Time = 72.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/7.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr7/study/excluded_7.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 890158 out of a possible 5024119 Sites
+Run Time = 2186.00 seconds
+After filtering, kept 851950 out of a possible 5265763 Sites
+Run Time = 2221.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/6.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr6/study/excluded_6.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/5.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr5/study/excluded_5.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 2460111 out of a possible 2460111 Sites
+Run Time = 77.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/6.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr6/study/excluded_6.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 1388755 out of a possible 1686471 Sites
+Run Time = 724.00 seconds
+After filtering, kept 2588168 out of a possible 2588168 Sites
+Run Time = 81.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/5.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr5/study/excluded_5.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 982575 out of a possible 5732585 Sites
+Run Time = 2459.00 seconds
+After filtering, kept 958373 out of a possible 5832276 Sites
+Run Time = 2475.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/4.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr4/study/excluded_4.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/3.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr3/study/excluded_3.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 2787581 out of a possible 2787581 Sites
+Run Time = 87.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/4.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr4/study/excluded_4.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 2821894 out of a possible 2821894 Sites
+Run Time = 88.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/3.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr3/study/excluded_3.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 1603992 out of a possible 1927503 Sites
+Run Time = 839.00 seconds
+After filtering, kept 1612241 out of a possible 1936990 Sites
+Run Time = 877.00 seconds
+After filtering, kept 1059224 out of a possible 6468094 Sites
+Run Time = 2746.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/1.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr1/study/excluded_1.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 3069931 out of a possible 3069931 Sites
+Run Time = 96.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/1.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr1/study/excluded_1.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 1129230 out of a possible 7081600 Sites
+Run Time = 2978.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/2.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr2/study/excluded_2.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1858204 out of a possible 2242705 Sites
+Run Time = 1002.00 seconds
+After filtering, kept 1892393 out of a possible 2289305 Sites
+Run Time = 992.00 seconds
+After filtering, kept 3392237 out of a possible 3392237 Sites
+Run Time = 106.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/2.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr2/study/excluded_2.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 2057615 out of a possible 2460111 Sites
+Run Time = 1084.00 seconds
+After filtering, kept 2151189 out of a possible 2588168 Sites
+Run Time = 1130.00 seconds
+After filtering, kept 2293495 out of a possible 2787581 Sites
+Run Time = 1195.00 seconds
+After filtering, kept 2340567 out of a possible 2821894 Sites
+Run Time = 1227.00 seconds
+After filtering, kept 2534644 out of a possible 3069931 Sites
+Run Time = 1326.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr12.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+After filtering, kept 2785361 out of a possible 3392237 Sites
+Run Time = 1465.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr13.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr14.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr15.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr16.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+After filtering, kept 652477 out of a possible 3868428 Sites
+Run Time = 1646.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/12.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr12/study/excluded_12.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1848117 out of a possible 1848117 Sites
+Run Time = 56.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/12.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr12/study/excluded_12.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 443598 out of a possible 2655067 Sites
+Run Time = 1116.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/14.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr14/study/excluded_14.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1270436 out of a possible 1270436 Sites
+Run Time = 39.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/14.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr14/study/excluded_14.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 489422 out of a possible 2857916 Sites
+Run Time = 1205.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/13.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr13/study/excluded_13.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1385433 out of a possible 1385433 Sites
+Run Time = 42.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/13.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr13/study/excluded_13.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr17.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr18.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+After filtering, kept 398221 out of a possible 2424689 Sites
+Run Time = 1014.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/15.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr15/study/excluded_15.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1139215 out of a possible 1139215 Sites
+Run Time = 34.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/15.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr15/study/excluded_15.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 1036058 out of a possible 1270436 Sites
+Run Time = 539.00 seconds
+After filtering, kept 1535946 out of a possible 1848117 Sites
+Run Time = 800.00 seconds
+After filtering, kept 1165022 out of a possible 1385433 Sites
+Run Time = 604.00 seconds
+After filtering, kept 419998 out of a possible 2697949 Sites
+Run Time = 1110.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/16.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr16/study/excluded_16.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1281297 out of a possible 1281297 Sites
+Run Time = 39.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/16.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr16/study/excluded_16.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr19.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr20.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+After filtering, kept 933756 out of a possible 1139215 Sites
+Run Time = 489.00 seconds
+After filtering, kept 372376 out of a possible 2329288 Sites
+Run Time = 972.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/17.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr17/study/excluded_17.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 384097 out of a possible 2267185 Sites
+Run Time = 962.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/18.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr18/study/excluded_18.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 1090072 out of a possible 1090072 Sites
+Run Time = 34.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/17.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr17/study/excluded_17.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 1104755 out of a possible 1104755 Sites
+Run Time = 34.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/18.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr18/study/excluded_18.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 1025011 out of a possible 1281297 Sites
+Run Time = 532.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr21.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+After filtering, kept 872370 out of a possible 1090072 Sites
+Run Time = 455.00 seconds
+After filtering, kept 904640 out of a possible 1104755 Sites
+Run Time = 473.00 seconds
+After filtering, kept 317504 out of a possible 1832506 Sites
+Run Time = 780.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/19.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr19/study/excluded_19.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 868554 out of a possible 868554 Sites
+Run Time = 27.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/19.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr19/study/excluded_19.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 296212 out of a possible 1812841 Sites
+Run Time = 769.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/20.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr20/study/excluded_20.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 884983 out of a possible 884983 Sites
+Run Time = 27.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/20.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr20/study/excluded_20.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 191138 out of a possible 1105538 Sites
+Run Time = 484.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/21.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr21/study/excluded_21.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/ExternalData/1kg/hg19/Genotypes/RawVCF/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+	--maf 0.01
+	--recode
+	--stdout
+
+Using zlib version: 1.2.8
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+Warning: Expected at least 2 parts in INFO entry: ID=SVLEN,Number=.,Type=Integer,Description="SV length. It is only calculated for structural variation MEIs. For other types of SVs; one may calculate the SV length by INFO:END-START+1, or by finding the difference between lengthes of REF and ALT alleles">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)">
+Warning: Expected at least 2 parts in INFO entry: ID=DP,Number=1,Type=Integer,Description="Total read depth; only low coverage data were counted towards the DP, exome data were not used">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+Warning: Expected at least 2 parts in INFO entry: ID=AA,Number=1,Type=String,Description="Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)">
+After filtering, kept 2504 out of 2504 Individuals
+Outputting VCF file...
+After filtering, kept 531276 out of a possible 531276 Sites
+Run Time = 17.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/21.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr21/study/excluded_21.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 690094 out of a possible 868554 Sites
+Run Time = 363.00 seconds
+After filtering, kept 721300 out of a possible 884983 Sites
+Run Time = 375.00 seconds
+After filtering, kept 427602 out of a possible 531276 Sites
+Run Time = 225.00 seconds
+After filtering, kept 191544 out of a possible 1103547 Sites
+Run Time = 471.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/22.pbwt_reference_impute.vcf.gz
+	--out /tmp/RtmpxJ05W6/chr22/study/excluded_22.pbwt_reference_impute.vcf.gz
+	--get-INFO INFO
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting INFO for each site
+After filtering, kept 524544 out of a possible 524544 Sites
+Run Time = 16.00 seconds
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC/Omni2.5/vcf_imputed/22.pbwt_reference_impute.vcf.gz
+	--exclude-positions /tmp/RtmpxJ05W6/chr22/study/excluded_22.pbwt_reference_impute.vcf.gz.exclude
+	--max-missing-count 1
+	--recode
+	--remove-filtered-all
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.8
+After filtering, kept 525 out of 525 Individuals
+Outputting VCF file...
+After filtering, kept 412684 out of a possible 524544 Sites
+Run Time = 211.00 seconds
+Checking the headers and starting positions of 22 files
+[rain] Performing PCA ...
+[rain] Exporting ...

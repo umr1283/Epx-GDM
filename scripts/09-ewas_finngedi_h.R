@@ -1,0 +1,817 @@
+# Docker Container R403
+### Load packages ==================================================================================
+library(here)
+
+suppressPackageStartupMessages({
+  library(Homo.sapiens)
+  # Use prefix instead of attaching these big bad written packages
+  # library(limma)
+  # library(IlluminaHumanMethylationEPICanno.ilm10b4.hg19)
+  library(DMRcate)
+  # library(DMRcatedata)
+  # library(ggbio)
+
+  library(readr)
+  library(tibble)
+  library(dplyr)
+  library(tidyr)
+  library(readxl)
+  library(purrr)
+  library(ggplot2)
+  library(ggrepel)
+  library(scales)
+  library(patchwork)
+  library(glue)
+  library(forcats)
+  library(patchwork)
+  library(gt)
+  library(utils)
+  library(broom)
+  library(data.table)
+  library(ggtext)
+  library(parallel)
+  library(modelr)
+})
+
+
+### Functions ======================================================================================
+#' pval_trans
+#'
+#' @return trans
+#' @export
+pval_trans <- function(alpha = NULL, md = FALSE, prefix = FALSE) {
+  scales::trans_new(
+    name = "pval",
+    domain = c(0, 1),
+    transform = function(x) {x[x < .Machine$double.xmin] <- .Machine$double.xmin; -log(x, 10)},
+    inverse = function(x) {10^-x},
+    breaks = (function(n = 5) {
+      function(x) {
+        max <- floor(-log(min(c(x, alpha), na.rm = TRUE), base = 10))
+        if (max == 0) 1 else sort(unique(c(10^-seq(0, max, by = floor(max / n) + 1), alpha)))
+      }
+    })(),
+    format = (function(x) {
+      g <- function(x) {
+        gsub(
+          "1 %*% ", "",
+          gsub(
+            "(.*)e([-+]*)0*(.*)", "\\1 %*% 10^\\2\\3",
+            gsub(
+             "1e+00", "1",
+              scales::scientific(x),
+             fixed = TRUE
+            )),
+          fixed = TRUE
+        )
+      }
+      highlight_alpha <- function(x, md = FALSE, prefix = FALSE) {
+        if (md & nchar(system.file(package = "ggtext")) != 0) {
+          prefix_text <- if (prefix) "&alpha; = " else ""
+          out <- paste0(
+            "<b style = 'color:firebrick2;'>", 
+            gsub("(.*) [%][*][%] .*\\^(.*)", paste(prefix_text, "\\1 &times; 10<sup>\\2</sup>"), g(x)), 
+            "</b>"
+          )
+        } else {
+          prefix_text <- if (prefix) "alpha ==" else ""
+          out <- parse(text = paste(prefix_text, g(x)))
+        }
+        
+        out
+      }
+      
+      if (!is.null(alpha)) {
+        ifelse(
+          test = scales::scientific(x) == scales::scientific(alpha), 
+          yes = highlight_alpha(x, md, prefix), 
+          no = g(x)
+        )
+      } else {
+        parse(text = g(x))
+      }
+    })
+  )
+}
+
+#' stat_manhattan
+#'
+#' @param mapping []
+#' @param data []
+#' @param geom []
+#' @param position []
+#' @param na.rm []
+#' @param show.legend []
+#' @param inherit.aes []
+#' @param shape []
+#' @param fill []
+#' @param ... []
+#'
+#' @return theme
+#' @export
+stat_manhattan <- function(
+  mapping = NULL,
+  data = NULL,
+  geom = "point",
+  position = "identity",
+  na.rm = FALSE,
+  show.legend = NA,
+  inherit.aes = TRUE,
+  shape = 16,
+  size = 0.5,
+  fill = NA,
+  ...
+) {
+  ggplot2::layer(
+    stat = StatManhattan,
+    data = data,
+    mapping = mapping,
+    geom = geom,
+    position = position,
+    show.legend = show.legend,
+    inherit.aes = inherit.aes,
+    params = list(
+      na.rm = na.rm,
+      shape = shape,
+      fill = fill,
+      size = size,
+      ...
+    )
+  )
+}
+
+
+#' @rdname stat_manhattan
+#' @export
+geom_manhattan <- function(
+  mapping = NULL,
+  data = NULL,
+  position = "identity",
+  na.rm = FALSE,
+  show.legend = NA,
+  inherit.aes = TRUE,
+  shape = 16,
+  fill = NA,
+  size = 0.5,
+  ...
+) {
+  list(
+    ggplot2::layer(
+      stat = StatManhattan,
+      data = data,
+      mapping = mapping,
+      geom = "point",
+      position = position,
+      show.legend = show.legend,
+      inherit.aes = inherit.aes,
+      params = list(
+        na.rm = na.rm,
+        shape = shape,
+        fill = fill,
+        size = size,
+        ...
+      )
+    ),
+    ggplot2::scale_x_continuous(
+      breaks = 1:24,
+      labels = c(1:22, "X", "Y"),
+      expand = ggplot2::expansion(add = 0.25)
+    ),
+    ggplot2::scale_y_continuous(
+      trans = "pval",
+      expand = ggplot2::expansion(mult = c(0, 0.10)),
+      limits = c(1, NA)
+    ),
+    ggplot2::scale_colour_manual(values = rep(scales::viridis_pal(begin = 1/4, end = 3/4)(2), 12)),
+    ggplot2::theme(
+      panel.grid.minor.x = ggplot2::element_blank()
+    ),
+    ggplot2::labs(colour = "Chromosome", x = "Chromosome", y = "P-Value")
+  )
+}
+
+#' @rdname stat_manhattan
+#'
+#' @format NULL
+#' @usage NULL
+#'
+#' @export
+StatManhattan <- ggplot2::ggproto("StatManhattan", ggplot2::Stat,
+  required_aes = c("x", "y", "colour"),
+  default_aes = ggplot2::aes(group = ggplot2::stat(colour)),
+  setup_data = function(data, params) {
+    map_chro <- c(seq(22), "X", "Y", "X", "Y") 
+    names(map_chro) <- c(seq(24), "X", "Y")
+      
+    data %>%
+      dplyr::mutate(
+        x_chr = map_chro[colour],
+        x_chr = factor(x_chr, levels = unique(map_chro)),
+        colour = x_chr,
+        x_pos = as.integer(x),
+        y_pval = as.numeric(y)
+      ) %>%
+      dplyr::group_by(x_chr) %>%
+      dplyr::arrange(x_pos) %>%
+      dplyr::mutate(x_pos = scales::rescale(x = x_pos, to = c(-0.4, 0.4))) %>%
+      dplyr::ungroup() %>%
+      dplyr::mutate(x_pos = x_pos + as.integer(x_chr)) %>%
+      dplyr::select(-x, -y, -group) %>%
+      dplyr::rename(x = x_pos, y = y_pval, group = x_chr)
+  },
+  compute_panel = function(data, scales, params) {
+    data
+  }
+)
+
+fortify.manhattan <- function(data, x, y, group) {
+  map_chro <- c(seq(22), "X", "Y", "X", "Y") 
+  names(map_chro) <- c(seq(24), "X", "Y")
+    
+  data %>%
+    dplyr::mutate(
+      x_chr = map_chro[.data[[group]]],
+      x_chr = factor(x_chr, levels = unique(map_chro)),
+      colour = x_chr,
+      x_pos = as.integer(.data[[x]]),
+      y_pval = as.numeric(.data[[y]])
+    ) %>%
+    dplyr::group_by(x_chr) %>%
+    dplyr::arrange(x_pos) %>%
+    dplyr::mutate(x_pos = scales::rescale(x = x_pos, to = c(-0.4, 0.4))) %>%
+    dplyr::ungroup() %>%
+    dplyr::mutate(x_pos = x_pos + as.integer(x_chr)) %>%
+    dplyr::select(-x, -y, -group) %>%
+    dplyr::rename(x = x_pos, y = y_pval, group = x_chr)
+}
+
+
+### Environment ====================================================================================
+data_directory <- normalizePath("/disks/DATA/Projects/EpxGDM/FINNGEDI_TUBINGEN/QC")
+output_directory <- here("outputs", "09-ewas_finngedi_h")
+dir.create(output_directory, recursive = TRUE, showWarnings = FALSE, mode = "0755")
+
+project_name <- gsub("(.*)_.*", "\\1", basename(here()))
+
+theme_set(theme_light())
+
+n_cores <- 40
+
+
+### Traits to be analysed ==========================================================================
+traits <- c("Gestational Diabetes Mellitus" = "GDM")
+
+
+### Data ===========================================================================================
+beta_matrix <- fread(file = file.path(data_directory, "EPIC", "EPIC_QC_betavalues.csv.gz"))
+samples_cols <- setdiff(colnames(beta_matrix), "cpg_id")
+beta_matrix[, (samples_cols) := lapply(.SD, function(x) log2(x) - log2(1 - x)), .SDcols = samples_cols]
+beta_matrix <- `rownames<-`(as.matrix(beta_matrix[, ..samples_cols]), beta_matrix[["cpg_id"]])
+
+# ethnicity_pcs <- read_csv(
+#   file = file.path(data_directory, "Omni2.5", glue("{project_name}_ethnicity.csv")),
+#   col_types = cols(
+#     .default = col_double(),
+#     sample = col_character(),
+#     cohort = col_character(),
+#     pop = col_character(),
+#     super_pop = col_character()
+#   )
+# ) %>%
+#   separate(col = "sample", into = c("family_id", "sample_id"), convert = FALSE)
+
+phenotype_matrix <- read_csv(file = file.path(data_directory, "EPIC", "EPIC_QC_phenotypes.csv"))
+
+# phenotype_pcs <- left_join(x = phenotype_matrix, y = ethnicity_pcs, by = c("Sample_ID" = "sample_id"))
+phenotype_pcs <- phenotype_matrix %>% 
+  filter(!qc_gender_discrepancy & call_rate >= 0.99) %>% 
+  filter(Project == "FinnGeDi") %>% 
+  filter(Sample_ID %in% colnames(beta_matrix)) %>% 
+  group_by(Sample_IID) %>% 
+  slice(which.max(call_rate)) %>% 
+  ungroup() %>% 
+  group_by(gsub("[[:alpha:]]", "", Sample_ID)) %>% 
+  filter(n() == 2) %>% 
+  ungroup()
+
+
+### Analyses =======================================================================================
+default_covariates <- c(
+  mothers = "AGE_m + BMI_m",
+  mothers_offsprings = "SEX + log(birthweight_c) + gestationalweek"
+)
+default_cells <- phenotype_pcs %>% 
+  select(status, starts_with("CellT")) %>% 
+  group_by(status) %>% 
+  summarise_all(~all(!is.na(.x))) %>% 
+  ungroup() %>% 
+  pivot_longer(cols = starts_with("CellT"), names_to = "CellT", values_to = "available") %>% 
+  filter(available) %>% 
+  group_by(status) %>% 
+  summarise(CellT = paste(CellT, collapse = " + ")) %>% 
+  (function(x) {
+    setNames(
+      object = x[["CellT"]], 
+      nm = tolower(ifelse(grepl("Offspring", x[["status"]]), "mothers_offsprings", paste0(x[["status"]], "s")))
+    )
+  })()
+
+walk(traits, function(trait) {
+  walk(c("mothers_offsprings"), function(om_status) {
+
+    # om_status <- "mothers_offsprings"
+    # trait <- unname(traits)
+    models <- tribble(
+      ~model, ~formula, ~formula_m,
+      "simple", as.formula(glue("~ { trait } + { default_covariates[om_status] }")), 
+        as.formula(glue('~ { default_covariates["mothers"] }')),
+      "simple_cell", as.formula(glue("~ { trait } + { default_covariates[om_status] } + { default_cells[om_status] }")), 
+        as.formula(glue('~ { default_covariates["mothers"] } + { default_cells["mothers"] }'))
+    )
+    
+    data_models <- models %>%
+      mutate(
+        pheno = pmap(
+          .l = list(formula, model, formula_m),
+          .f = function(.form, .model, .form_m) {
+            phenotype_pcs %>%
+              select(Sample_ID, all.vars(.form), all.vars(.form_m)) %>%
+              # drop_na() %>% 
+              group_by(group = gsub("[[:alpha:]]", "", Sample_ID)) %>% 
+              filter(n() == 2) %>% 
+              ungroup() %>% 
+              select(-group)
+          }
+        ),
+        beta_offsprings = map(pheno, ~ beta_matrix[, filter(.x, grepl("c", Sample_ID))[["Sample_ID"]]]),
+        beta_mothers = map(pheno, ~ beta_matrix[, filter(.x, grepl("m", Sample_ID))[["Sample_ID"]]])
+      )
+    
+    dmp <- map(list(data_models[1, ], data_models[2, ]), function(i) {
+      all_cpgs <- intersect(
+        rownames(i[["beta_offsprings"]][[1]]),
+        rownames(i[["beta_mothers"]][[1]])
+      )
+      do.call("rbind", mclapply(
+        X = split(
+          x = all_cpgs, 
+          f = (seq_along(all_cpgs) - 1) %/% ( (length(all_cpgs) - 1) %/% n_cores )
+        ),
+        .form = i[["formula"]][[1]],
+        .form_m = i[["formula_m"]][[1]],
+        .beta_o = i[["beta_offsprings"]][[1]],
+        .beta_m = i[["beta_mothers"]][[1]],
+        .pheno = i[["pheno"]][[1]],
+        mc.preschedule = FALSE,
+        mc.cores = n_cores,
+        FUN = function(icpgs, .form, .form_m, .beta_o, .beta_m, .pheno) {
+          map_df(.x = icpgs, .f = function(icpg) {
+            beta_icpg <- c(.beta_o[icpg, ], .beta_m[icpg, ])
+            outliers <- c(
+              quantile(beta_icpg, probs = 0.25) - 3 * IQR(beta_icpg),
+              quantile(beta_icpg, probs = 0.75) + 3 * IQR(beta_icpg)
+            )
+            lm_mother_resid <- .pheno %>%
+              filter(grepl("m", Sample_ID)) %>%
+              mutate(Mothers = as.matrix(.beta_m)[icpg, Sample_ID]) %>%
+              do(
+                add_residuals(
+                  data = .,
+                  model = lm(formula = update.formula(.form_m, "Mothers ~ ."), data = .)
+                )
+              ) %>% 
+              select(Sample_ID, Mothers = resid)
+            
+            lm_pheno <- .pheno %>%
+              filter(grepl("c", Sample_ID)) %>%
+              mutate(
+                Offsprings = .beta_o[icpg, Sample_ID],
+                Mothers_raw = .beta_m[icpg, gsub("c", "m", Sample_ID)]
+              ) %>% 
+              filter(
+                between(Offsprings, outliers[1], outliers[2]) &
+                  between(Mothers_raw, outliers[1], outliers[2])
+              ) %>% 
+              mutate(MID = gsub("c", "m", Sample_ID)) %>% 
+              left_join(y = lm_mother_resid, by = c("MID" = "Sample_ID")) %>% 
+              select(Sample_ID, all.vars(.form), Offsprings, Mothers) %>%
+              drop_na()
+
+            tidy(lm(
+              formula = update.formula(.form, Offsprings ~ Mothers + Mothers:GDM + .),
+              data = lm_pheno
+            )) %>%
+              filter(grepl("GDM", term)) %>%
+              mutate(
+                CpG = icpg,
+                avgmvalue_meth = mean(lm_pheno[["Offsprings"]]),
+                n = nrow(lm_pheno)
+              )
+          })
+        }
+      )) %>%
+        rename(pvalue = p.value, se = std.error) %>%
+        group_by(term) %>%
+        mutate(fdr = p.adjust(pvalue, method = "BH")) %>%
+        ungroup() %>%
+        inner_join(
+          y = IlluminaHumanMethylationEPICanno.ilm10b4.hg19::Locations %>%
+            as.data.frame() %>%
+            rownames_to_column("CpG"),
+          by = "CpG"
+        ) %>%
+        rename(cpg_chr = chr, cpg_pos = pos, cpg_strand = strand) %>%
+        inner_join(
+          y = IlluminaHumanMethylationEPICanno.ilm10b4.hg19::Islands.UCSC %>%
+            as.data.frame() %>%
+            rownames_to_column("CpG"),
+          by = "CpG"
+        ) %>%
+        inner_join(
+          y = IlluminaHumanMethylationEPICanno.ilm10b4.hg19::Other %>%
+            as.data.frame() %>%
+            select(UCSC_RefGene_Name, UCSC_RefGene_Accession, UCSC_RefGene_Group) %>%
+            rownames_to_column("CpG"),
+          by = "CpG"
+        )
+    })
+      
+    dmr <- map(dmp, function(.dmp) {
+      dmp_gdm <- filter(.dmp, term == "GDM")
+      .dmp_for_dmr <- new("CpGannotated", 
+        ranges = `names<-`(GRanges(
+          seqnames = Rle(dmp_gdm[["cpg_chr"]], 1),
+          ranges = IRanges(dmp_gdm[["cpg_pos"]]),
+          strand = Rle(dmp_gdm[["cpg_strand"]], 1),
+          stat = dmp_gdm[["statistic"]],
+          diff = dmp_gdm[["estimate"]],
+          ind.fdr = dmp_gdm[["fdr"]],
+          is.sig = TRUE
+        ), dmp_gdm[["CpG"]])
+      )
+      
+      extractRanges(
+        dmrcate(
+          object = .dmp_for_dmr,
+          lambda = 1000, # default
+          C = NULL, # default
+          min.cpgs = 2 # default
+        ),
+        genome = "hg19"
+      )
+    })
+    
+    data_models <- data_models %>%
+      transmute(
+        dmp = dmp,
+        dmr = dmr,
+        model = model,
+        formula = formula
+      )
+    
+    dir.create(file.path(output_directory, trait), recursive = TRUE, showWarnings = FALSE, mode = "0755")
+    write_rds(
+      x = data_models, 
+      file = file.path(output_directory, trait, glue("ewas_{trait}_{om_status}.rds"))
+    )
+    
+    data_models_dmp <- data_models %>%
+      select(model, formula, dmp) %>% 
+      unnest(dmp) %>% 
+      nest(
+        dmp = c(
+          estimate, se, statistic, pvalue, CpG, avgmvalue_meth, 
+          n, fdr, cpg_chr, cpg_pos, cpg_strand, Islands_Name, Relation_to_Island, 
+          UCSC_RefGene_Name, UCSC_RefGene_Accession, UCSC_RefGene_Group
+        )
+      )
+    
+    
+    ### Output =========================================================================================
+    ## DMPs Tables -------------------------------------------------------------------------------------
+    pwalk(
+      .l = list(data_models$model, data_models$dmp),
+      .f = function(.model, .dmp) {
+        write_csv(
+          x = .dmp,
+          file = file.path(
+            output_directory, trait, 
+            glue("{project_name}_EWAS_DMP_{trait}_{om_status}_{.model}.csv.gz")
+          )
+        )
+      }
+    )
+    
+    ## DMPs Plots --------------------------------------------------------------------------------------
+    pwalk(
+      .l = list(
+        data_models_dmp$model, 
+        data_models_dmp$formula, 
+        data_models_dmp$dmp,
+        data_models_dmp$term
+      ),
+      .f = function(.model, .form, .dmp, .term) {
+        ## QQ plot
+        p_qq <- ggplot(
+          data = .dmp %>%
+            select(CpG, pvalue) %>%
+            pivot_longer(cols = "pvalue", names_to = "type", values_to = "value") %>%
+            group_by(type) %>%
+            arrange(value) %>%
+            mutate(
+              exppval = (1:n() - 0.5) / n(),
+              gc = median(qnorm(value / 2)^2, na.rm = TRUE) / qchisq(0.5, df = 1)
+            ) %>%
+            ungroup() %>%
+            arrange(type) %>%
+            mutate(
+              labels = paste0("lambda[", type, "]=='", number_format(accuracy = 0.001)(gc), "'"),
+              labels = factor(labels, levels = unique(labels))
+            ),
+          mapping = aes(x = exppval, y = value, colour = labels, shape = labels)
+        ) +
+          coord_cartesian(xlim = rev(range(c(1, .dmp[["pvalue"]]))), ylim = rev(range(c(1, .dmp[["pvalue"]])))) +
+          geom_abline(intercept = 0, slope = 1, colour = "black") +
+          geom_point(size = 0.75) +
+          scale_x_continuous(trans = "pval", expand = expansion(c(0, 0.1))) +
+          scale_y_continuous(trans = "pval", expand = expansion(c(0, 0.1))) +
+          scale_colour_viridis_d(labels = parse_format(), begin = 0.5, end = 0.5) +
+          scale_shape_discrete(solid = TRUE, labels = parse_format()) +
+          labs(x = "Expected P-value", y = "Observed P-value", colour = NULL, shape = NULL) +
+          guides(shape = guide_legend(override.aes = list(size = 3))) +
+          theme(
+            legend.position = c(0.99, 0.01),
+            legend.justification = c("right", "bottom"),
+            legend.box.just = "right",
+            legend.margin = margin(1.5, 1.5, 1.5, 1.5),
+            legend.spacing.x = unit(0, "pt"),
+            legend.spacing.y = unit(0, "pt")
+          )
+    
+        ## Volcano Plot
+        p_volcano <- ggplot(
+          data = .dmp,
+          mapping = aes(x = estimate, y = pvalue, colour = abs(estimate))
+        )  +
+          annotate(
+            geom = "rect",
+            xmin = -Inf, xmax = Inf, ymin = 1, ymax = 0.05,
+            fill = "firebrick2", alpha = 0.2, colour = NA
+          ) +
+          geom_vline(xintercept = 0, linetype = 2) +
+          geom_point(size = 0.75) +
+          scale_colour_viridis_c(trans = "sqrt", limits = c(0, NA)) +
+          scale_y_continuous(trans = "pval", expand = expansion(mult = c(0, 0.2))) +
+          labs(x = "Estimate (M-value)", y = "P-value") +
+          theme(legend.position = "none")
+    
+        ## Manhattan Plot
+        p_manhattan <- ggplot(
+          data = .dmp,
+          mapping = aes(x = cpg_pos, y = pvalue, colour = gsub("chr", "", cpg_chr))
+        ) +
+          annotate(
+            geom = "rect",
+            xmin = -Inf, xmax = Inf, ymin = 1, ymax = 0.05,
+            fill = "firebrick2", alpha = 0.2, colour = NA
+          ) +
+          geom_manhattan(size = 0.75) +
+          scale_colour_manual(values = rep(viridis_pal(begin = 0.25, end = 0.75)(2), 12)) +
+          theme(legend.position = "none")
+    
+        p_all <- ((p_qq + p_volcano) / p_manhattan) +
+          plot_annotation(
+            title = glue("[{project_name}] EWAS {toupper(om_status)}"),
+            subtitle = gsub(
+              pattern = paste0(" ", .term, " "), 
+              replacement = paste0(' <b style="color:#21908C;">', .term, "</b> "), 
+              x = glue(
+                'Model: Offsprings = Mothers + Mothers:GDM + ', 
+                '{ glue_collapse(gsub("CellT_", "", all.vars(.form)), sep = " + ", last = " + ") }'
+              )
+            ),
+            tag_levels = "A",
+            theme = theme(plot.subtitle = element_markdown())
+          )
+    
+        ggsave(
+          filename = file.path(
+            output_directory, trait, 
+            glue('{project_name}_EWAS_DMP_{trait}_{om_status}_{.model}_{gsub(":", "", .term)}.png')
+          ),
+          plot = p_all,
+          width = 29.7 - 5, height = 21 - 5, units = "cm",
+          dpi = 120
+        )
+      }
+    )
+    
+    ## DMPs QQ Plot ------------------------------------------------------------------------------------
+    data_qq <- map(data_models$dmp, ~ select(.x, CpG, term, pvalue)) %>%
+      reduce(.f = full_join, by = c("CpG", "term")) %>%
+      set_names(nm = c("CpG", "term", data_models$model)) %>%
+      pivot_longer(cols = starts_with("simple"), names_to = "type", values_to = "value") %>%
+      mutate(
+        type = factor(
+          x = type,
+          levels = c("simple", "simple_cell"),
+          labels = c("RAW", "Cells")
+        ),
+        type_group = fct_collapse(
+          .f = type,
+          "Without Cellular Composition" = "RAW",
+          "With Cellular Composition" = "Cells"
+        )
+      ) %>%
+      group_by(type, term) %>%
+      arrange(value) %>%
+      mutate(
+        exppval = (1:n() - 0.5) / n(),
+        gc = median(qnorm(value / 2)^2, na.rm = TRUE) / qchisq(0.5, df = 1)
+      ) %>%
+      ungroup() %>%
+      arrange(type) %>%
+      mutate(
+        labels = paste0("lambda['", type, "/", term, "']=='", number_format(accuracy = 0.001)(gc), "'"),
+        labels = factor(labels, levels = unique(labels))
+      )
+    p_qq <- ggplot(
+      data = data_qq,
+      mapping = aes(x = exppval, y = value, colour = labels, shape = labels)
+    ) +
+      coord_cartesian(
+        xlim = rev(range(c(1, data_qq[, c("value", "exppval")]))), 
+        ylim = rev(range(c(1, data_qq[, c("value", "exppval")])))
+      ) +
+      geom_abline(intercept = 0, slope = 1, colour = "black") +
+      geom_point(size = 0.75) +
+      scale_x_continuous(trans = "pval", expand = expansion(c(0, 0.1))) +
+      scale_y_continuous(trans = "pval", expand = expansion(c(0, 0.1))) +
+      scale_colour_viridis_d(labels = parse_format(), begin = 0, end = 0.95) +
+      scale_shape_discrete(solid = TRUE, labels = parse_format()) +
+      labs(x = "Expected P-value", y = "Observed P-value", colour = NULL, shape = NULL) +
+      theme(legend.position = "top") +
+      guides(shape = guide_legend(override.aes = list(size = 3))) +
+      facet_grid(rows = vars(term), cols = vars(type_group))
+    
+    ggsave(
+      filename = file.path(
+        output_directory, trait, 
+        glue("{project_name}_EWAS_DMP_{trait}_{om_status}_ALL.png")
+      ),
+      plot = p_qq,
+      width = 16, height = 12, units = "cm",
+      dpi = 120
+    )
+    
+    ## DMRs Tables -------------------------------------------------------------------------------------
+    pwalk(
+      .l = list(data_models$model, data_models$dmr),
+      .f = function(.model, .dmr) {
+        write_csv(
+          x = as.data.frame(.dmr),
+          file = file.path(
+            output_directory, trait, 
+            glue("{project_name}_EWAS_DMR_{trait}_{om_status}_{.model}.csv.gz")
+          )
+        )
+      }
+    )
+    
+    ## DMRs Plots --------------------------------------------------------------------------------------
+    # draw_dmr(.dmr = data_models$dmr[[1]][2, ], .dmp = data_models$dmp[[1]])
+    
+    # summary(data.frame(data_models$dmr[[1]]))
+
+    ### Summary ========================================================================================
+    data_models %>%
+      mutate(
+        trait = trait,
+        status = om_status,
+        dmp_dmr = map2(
+          .x = dmp, .y = dmr,
+          .f = function(x, y) {
+            full_join(
+              x = map_df(c(0.10, 0.05, 0.01), function(alpha) {
+                as.data.table(x)[, 
+                  .(
+                    alpha = alpha, 
+                    pvalue = sum(pvalue <= alpha), 
+                    fdr = sum(fdr <= alpha), 
+                    n_dmp = .N
+                  ), 
+                  by = term
+                ]
+              }),
+              y = map_df(c(0.10, 0.05, 0.01), function(alpha) {
+                as.data.table(y)[, 
+                  .(
+                    term = "GDM",
+                    alpha = alpha, 
+                    mean_n_cpgs = mean(no.cpgs),
+                    sd_n_cpgs = sd(no.cpgs),
+                    min_smoothed_fdr = sum(min_smoothed_fdr <= alpha),
+                    HMFDR = sum(HMFDR <= alpha),
+                    Fisher = sum(Fisher <= alpha),
+                    n_dmr = .N
+                  )
+                ]
+              }),
+              by = c("term", "alpha")
+            ) %>%
+              arrange(desc(alpha)) %>%
+              mutate(alpha = paste("α =", alpha))
+          }
+        ),
+        dmp = NULL,
+        dmr = NULL,
+        model = NULL
+      ) %>%
+      unnest("dmp_dmr") %>%
+      mutate(
+        formula = map(formula, function(x) {
+          glue('Model: Offsprings = Mothers + Mothers:GDM + { glue_collapse(gsub("CellT_", "", all.vars(x)), sep = " + ", last = " + ") }')
+        })
+      ) %>%
+      gt(rowname_col = "alpha", groupname_col = c("trait", "status", "formula")) %>%
+      fmt_number(
+        columns = vars(pvalue, fdr, n_dmp, mean_n_cpgs, sd_n_cpgs, min_smoothed_fdr, HMFDR, Fisher, n_dmr),
+        decimals = 0
+      ) %>% 
+      tab_spanner(
+        label = "DMP",
+        columns = vars(pvalue, fdr, n_dmp)
+      ) %>%
+      tab_spanner(
+        label = "DMR",
+        columns = vars(mean_n_cpgs, min_smoothed_fdr, HMFDR, Fisher, n_dmr)
+      ) %>%
+      cols_merge_uncert(
+        col_val = vars(mean_n_cpgs, sd_n_cpgs),
+        col_uncert = vars(sd_n_cpgs)
+      ) %>%
+      fmt_missing(columns = everything()) %>%
+      cols_label(
+        pvalue = "P-value",
+        fdr = "FDR",
+        n_dmp = "N",
+        mean_n_cpgs = "# CpGs",
+        min_smoothed_fdr = "min(FDR)",
+        HMFDR = "HM-FDR",
+        Fisher = "Fisher",
+        n_dmr = "N"
+      ) %>%
+      tab_header(
+        title = "Summary Results",
+        subtitle = md(glue("**{ project_name }** Project"))
+      ) %>%
+      tab_footnote("FDR: false discovery rate.", cells_column_labels("fdr")) %>%
+      tab_footnote("Harmonic mean of the individual CpG FDRs.", cells_column_labels("HMFDR")) %>%
+      tab_footnote("Fisher combined probability transform of the individual CpG FDRs.", cells_column_labels("Fisher")) %>%
+      tab_footnote("Minimum FDR of the smoothed estimate.", cells_column_labels("min_smoothed_fdr")) %>%
+      tab_footnote("Number of CpGs in the DMR as mean (± standard deviation).", cells_column_labels("mean_n_cpgs")) %>%
+      tab_footnote("DMP: differentially methylated position.", cells_column_spanners("DMP")) %>%
+      tab_footnote("DMR: differentially methylated region.", cells_column_spanners("DMR")) %>%
+      opt_row_striping() %>%
+      tab_style(
+      style = list(
+        cell_fill(color = "firebrick2"),
+        cell_text(color = "white")
+      ),
+      locations = cells_body(columns = vars(fdr), rows = fdr == 0)
+    ) %>%
+    tab_style(
+      style = list(
+        cell_fill(color = "firebrick2"),
+        cell_text(color = "white")
+      ),
+      locations = cells_body(columns = vars(HMFDR), rows = HMFDR == 0)
+    ) %>%
+    tab_style(
+      style = list(
+        cell_fill(color = "firebrick2"),
+        cell_text(color = "white")
+      ),
+      locations = cells_body(columns = vars(Fisher), rows = Fisher == 0)
+    ) %>%
+      gtsave(file.path(output_directory, trait, glue("{ project_name }_EWAS_summary_{om_status}.html")))
+  })
+})
+
+
+### Archive ========================================================================================
+owd <- getwd()
+walk(traits, function(trait) {
+  setwd(file.path(output_directory, trait))
+  archive_name <- file.path(
+    output_directory, 
+    glue('{gsub("-", "", Sys.Date())}_{project_name}_EWAS_HERITABILITY_{trait}.zip')
+  )
+  zip(
+    zipfile = archive_name,
+    files = list.files(pattern = "gz$|png$|html$", full.names = TRUE)
+  )
+  setwd(owd)
+  system(glue("fexsend {archive_name} ."))
+  unlink(archive_name)
+})

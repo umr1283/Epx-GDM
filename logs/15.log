@@ -1,0 +1,64 @@
+here() starts at /disks/PROJECT/EpxGDM_TobyAndrew
+Warning message:
+replacing previous import 'minfi::getMeth' by 'bsseq::getMeth' when loading 'DMRcate' 
+
+[36m──[39m [1m[1mColumn specification[1m[22m [36m────────────────────────────────────────────────────────[39m
+cols(
+  .default = col_double(),
+  Sample_ID = [31mcol_character()[39m,
+  Sample_Name = [31mcol_character()[39m,
+  Project = [31mcol_character()[39m,
+  Sample_Plate = [31mcol_character()[39m,
+  Sample_Well = [31mcol_character()[39m,
+  Sentrix_Position = [31mcol_character()[39m,
+  Replicate = [31mcol_character()[39m,
+  Sample_IID = [31mcol_character()[39m,
+  status = [31mcol_character()[39m,
+  cohort = [31mcol_character()[39m,
+  Array = [31mcol_character()[39m,
+  Basename = [31mcol_character()[39m,
+  filenames = [31mcol_character()[39m,
+  qc_gender_discrepancy = [33mcol_logical()[39m
+)
+[36mℹ[39m Use [30m[47m[30m[47m`spec()`[47m[30m[49m[39m for the full column specifications.
+
+`summarise()` ungrouping output (override with `.groups` argument)
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+`summarise()` ungrouping output (override with `.groups` argument)
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+`summarise()` ungrouping output (override with `.groups` argument)
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Success!

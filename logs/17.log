@@ -1,0 +1,49 @@
+here() starts at /project
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  .default = col_double(),
+  Sample_ID = col_character(),
+  Sample_Name = col_character(),
+  Project = col_character(),
+  Sample_Plate = col_character(),
+  Sample_Well = col_character(),
+  Sentrix_Position = col_character(),
+  Replicate = col_character(),
+  Sample_IID = col_character(),
+  status = col_character(),
+  cohort = col_character(),
+  Array = col_character(),
+  Basename = col_character(),
+  filenames = col_character(),
+  qc_gender_discrepancy = col_logical()
+)
+ℹ Use `spec()` for the full column specifications.
+
+Setting options('download.file.method.GEOquery'='auto')
+Setting options('GEOquery.inmemory.gpl'=FALSE)
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Scale for 'colour' is already present. Adding another scale for 'colour',
+which will replace the existing scale.
+Success!

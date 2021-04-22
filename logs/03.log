@@ -1,0 +1,1916 @@
+
+
+processing file: 03-qc_plink.Rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |.                                                                     |   1%
+   inline R code fragments
+
+  |                                                                              |.                                                                     |   2%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..                                                                    |   3%
+  ordinary text without R code
+
+  |                                                                              |...                                                                   |   4%
+label: data
+  |                                                                              |....                                                                  |   5%
+   inline R code fragments
+
+  |                                                                              |....                                                                  |   6%
+label: cohort-overview (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |.....                                                                 |   7%
+   inline R code fragments
+
+  |                                                                              |......                                                                |   8%
+label: cohort-overview-table
+  |                                                                              |......                                                                |   9%
+  ordinary text without R code
+
+  |                                                                              |.......                                                               |  10%
+label: sample-call-rate-01 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |........                                                              |  11%
+   inline R code fragments
+
+  |                                                                              |.........                                                             |  12%
+label: sample-call-rate-02 (with options) 
+List of 1
+ $ eval: language !is.na(prop_diff_maf_lower) & prop_diff_maf_lower
+
+  |                                                                              |.........                                                             |  13%
+  ordinary text without R code
+
+  |                                                                              |..........                                                            |  14%
+label: sample-call-rate-03 (with options) 
+List of 1
+ $ eval: language !is.na(prop_diff_maf_geq) & prop_diff_maf_geq
+
+  |                                                                              |...........                                                           |  15%
+  ordinary text without R code
+
+  |                                                                              |...........                                                           |  16%
+label: sample-call-rate-04
+  |                                                                              |............                                                          |  17%
+  ordinary text without R code
+
+  |                                                                              |.............                                                         |  18%
+label: sample-call-rate-05 (with options) 
+List of 1
+ $ fig.cap: chr "Sample call rate."
+
+  |                                                                              |..............                                                        |  19%
+  ordinary text without R code
+
+  |                                                                              |..............                                                        |  20%
+label: sample-call-rate-06 (with options) 
+List of 1
+ $ eval: language nrow(callrate_samples_toexclude) != 0
+
+  |                                                                              |...............                                                       |  21%
+  ordinary text without R code
+
+  |                                                                              |................                                                      |  22%
+label: gender-check-01
+  |                                                                              |................                                                      |  23%
+  ordinary text without R code
+
+  |                                                                              |.................                                                     |  24%
+label: gender-check-02 (with options) 
+List of 2
+ $ eval   : symbol gender_file_check
+ $ include: logi FALSE
+
+  |                                                                              |..................                                                    |  26%
+   inline R code fragments
+
+Note: Gender phenotype was read from PLINK files.
+  |                                                                              |...................                                                   |  27%
+label: gender-check-03 (with options) 
+List of 2
+ $ eval   : symbol gender_file_check
+ $ fig.cap: language paste("The homozygosity rate for each sample (estimated using X-chromosomal variants)",      "plotted against the| __truncated__ ...
+
+  |                                                                              |...................                                                   |  28%
+  ordinary text without R code
+
+  |                                                                              |....................                                                  |  29%
+label: heterozygosity-01 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |.....................                                                 |  30%
+  ordinary text without R code
+
+  |                                                                              |.....................                                                 |  31%
+label: heterozygosity-02 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |......................                                                |  32%
+  ordinary text without R code
+
+  |                                                                              |.......................                                               |  33%
+label: heterozygosity-05 (with options) 
+List of 2
+ $ fig.height: language 4.7 * 1.5
+ $ fig.cap   : language paste0("Heterozygosity rate against the call rate per sample. ", "A and C, the heterozygosity rate computed based| __truncated__ ...
+
+  |                                                                              |........................                                              |  34%
+   inline R code fragments
+
+  |                                                                              |........................                                              |  35%
+label: relatedness-01 (with options) 
+List of 2
+ $ eval   : language !params[["includes_relatives"]]
+ $ include: logi FALSE
+
+  |                                                                              |.........................                                             |  36%
+   inline R code fragments
+
+  |                                                                              |..........................                                            |  37%
+label: relatedness-02 (with options) 
+List of 1
+ $ eval: language !params[["includes_relatives"]]
+
+  |                                                                              |..........................                                            |  38%
+  ordinary text without R code
+
+  |                                                                              |...........................                                           |  39%
+label: relatedness-03 (with options) 
+List of 1
+ $ eval: language !params[["includes_relatives"]]
+
+  |                                                                              |............................                                          |  40%
+  ordinary text without R code
+
+  |                                                                              |.............................                                         |  41%
+label: imendel-error-00
+  |                                                                              |.............................                                         |  42%
+  ordinary text without R code
+
+  |                                                                              |..............................                                        |  43%
+label: imendel-error-01 (with options) 
+List of 1
+ $ eval: language params[["includes_relatives"]]
+
+  |                                                                              |...............................                                       |  44%
+  ordinary text without R code
+
+  |                                                                              |...............................                                       |  45%
+label: imendel-error-02 (with options) 
+List of 1
+ $ eval: language params[["includes_relatives"]] & imendel_file_check
+
+  |                                                                              |................................                                      |  46%
+  ordinary text without R code
+
+  |                                                                              |.................................                                     |  47%
+label: imendel-error-03 (with options) 
+List of 2
+ $ eval   : language params[["includes_relatives"]] & imendel_file_check
+ $ fig.cap: chr "Sample Mendel error rate."
+
+  |                                                                              |..................................                                    |  48%
+  ordinary text without R code
+
+  |                                                                              |..................................                                    |  49%
+label: imendel-error-04 (with options) 
+List of 1
+ $ eval: language params[["includes_relatives"]] & imendel_file_check
+
+  |                                                                              |...................................                                   |  50%
+  ordinary text without R code
+
+  |                                                                              |....................................                                  |  51%
+label: population-01 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |....................................                                  |  52%
+   inline R code fragments
+
+  |                                                                              |.....................................                                 |  53%
+label: population-02 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |......................................                                |  54%
+  ordinary text without R code
+
+  |                                                                              |.......................................                               |  55%
+label: population-03 (with options) 
+List of 2
+ $ fig.height: language 4.7 * 1.5
+ $ fig.cap   : language paste("First factorial plane computed with a combined dataset", "involving samples from the 1,000 Genomes Project| __truncated__
+
+  |                                                                              |.......................................                               |  56%
+  ordinary text without R code
+
+  |                                                                              |........................................                              |  57%
+label: population-04 (with options) 
+List of 1
+ $ eval: language !is.null(params[["population"]]) & nrow(not_target_population) > 0
+
+  |                                                                              |.........................................                             |  58%
+  ordinary text without R code
+
+  |                                                                              |.........................................                             |  59%
+label: population-05 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..........................................                            |  60%
+   inline R code fragments
+
+  |                                                                              |...........................................                           |  61%
+label: population-06 (with options) 
+List of 1
+ $ fig.cap: language paste("Within-samples outliers detected as samples having at least one coordinate",      "in the first factorial | __truncated__ ...
+
+  |                                                                              |............................................                          |  62%
+   inline R code fragments
+
+  |                                                                              |............................................                          |  63%
+label: population-07 (with options) 
+List of 1
+ $ fig.cap: chr "PCA plot for components from two to five."
+
+  |                                                                              |.............................................                         |  64%
+  ordinary text without R code
+
+  |                                                                              |..............................................                        |  65%
+label: exclusion (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..............................................                        |  66%
+   inline R code fragments
+
+  |                                                                              |...............................................                       |  67%
+label: variant-call-rate-01 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |................................................                      |  68%
+  ordinary text without R code
+
+  |                                                                              |.................................................                     |  69%
+label: variant-call-rate-02 (with options) 
+List of 1
+ $ fig.cap: language paste("Call rate per variant. The red line denotes the call rate", scales::percent(params[["callrate_snps"]],    | __truncated__
+
+  |                                                                              |.................................................                     |  70%
+  ordinary text without R code
+
+  |                                                                              |..................................................                    |  71%
+label: duplicated-snps (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |...................................................                   |  72%
+   inline R code fragments
+
+  |                                                                              |...................................................                   |  73%
+label: lmendel-error-00
+  |                                                                              |....................................................                  |  74%
+  ordinary text without R code
+
+  |                                                                              |.....................................................                 |  76%
+label: lmendel-error-01 (with options) 
+List of 1
+ $ eval: language params[["includes_relatives"]]
+
+  |                                                                              |......................................................                |  77%
+  ordinary text without R code
+
+  |                                                                              |......................................................                |  78%
+label: lmendel-error-02 (with options) 
+List of 2
+ $ eval   : language params[["includes_relatives"]] & lmendel_file_check
+ $ fig.cap: language paste("Mendel error rate per variant.", scales::comma(sum(mendel_error_snps[["percentage"]] >      params[["mende| __truncated__ ...
+
+  |                                                                              |.......................................................               |  79%
+  ordinary text without R code
+
+  |                                                                              |........................................................              |  80%
+label: uniq-snps-list (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |........................................................              |  81%
+  ordinary text without R code
+
+  |                                                                              |.........................................................             |  82%
+label: maf-01 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..........................................................            |  83%
+  ordinary text without R code
+
+  |                                                                              |...........................................................           |  84%
+label: maf-02 (with options) 
+List of 1
+ $ fig.cap: chr "Distribution of variants number per class of minor allele frequency (MAF)"
+
+  |                                                                              |...........................................................           |  85%
+  ordinary text without R code
+
+  |                                                                              |............................................................          |  86%
+label: hwe-01 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |.............................................................         |  87%
+   inline R code fragments
+
+  |                                                                              |.............................................................         |  88%
+label: hwe-02 (with options) 
+List of 1
+ $ fig.cap: language paste0("The distribution of Hardy-Weinberg Equilibrium (HWE) p-values ",      "for variants with HWE p-value < ",| __truncated__ ...
+
+  |                                                                              |..............................................................        |  89%
+  ordinary text without R code
+
+  |                                                                              |...............................................................       |  90%
+label: file-management (with options) 
+List of 1
+ $ include: logi FALSE
+
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation_tmp1.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/raw_data
+  --extract /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/uniq_snps_list.txt
+  --geno 0.05
+  --hwe 1e-04
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation_tmp1
+  --remove /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/samples_excluded.txt
+  --set-hh-missing
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+2372784 variants loaded from .bim file.
+544 people (0 males, 544 females) loaded from .fam.
+--extract: 2354939 variants remaining.
+--remove: 525 people remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate in remaining samples is 0.997313.
+12246 variants removed due to missing genotype data (--geno).
+--hwe: 1530 variants removed due to Hardy-Weinberg exact test.
+2341163 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation_tmp1.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation_tmp1.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation_tmp1.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation_tmp1
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+2341163 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998097.
+2341163 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/plink_qc/EpxGDM_QC.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation
+  --extract /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/uniq_snps_list.txt
+  --geno 0.05
+  --hwe 1e-04
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/plink_qc/EpxGDM_QC
+  --remove /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/samples_excluded.txt
+  --set-hh-missing
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+2341163 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+--extract: 2341163 variants remaining.
+--remove: 525 people remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998097.
+0 variants removed due to missing genotype data (--geno).
+--hwe: 0 variants removed due to Hardy-Weinberg exact test.
+2341163 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/plink_qc/EpxGDM_QC.bed +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/plink_qc/EpxGDM_QC.bim +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/plink_qc/EpxGDM_QC.fam ...
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation
+  --freq
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+2341163 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998097.
+--freq: Allele frequencies (founders only) written to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.frq
+.
+
+
+         Script to check plink .bim files against HRC/1000G for
+        strand, id names, positions, alleles, ref/alt assignment
+                    William Rayner 2015-2020
+                        wrayner@well.ox.ac.uk
+
+                            Version 4.2.13
+
+
+Options Set:
+Reference Panel:             1000G
+Bim filename:                /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.bim
+Reference filename:          /disks/DATA/ExternalData/1kg/hg19/Reference_genome/1000GP_Phase3_combined.legend
+Allele frequencies filename: /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.frq
+Plink executable to use:     /usr/bin/plink1.9
+
+Chromosome flag set:         No
+Allele frequency threshold:  0.2
+Population for 1000G:        ALL
+
+Path to plink bim file: /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp
+
+Reading /disks/DATA/ExternalData/1kg/hg19/Reference_genome/1000GP_Phase3_combined.legend
+2000000
+4000000
+6000000
+8000000
+10000000
+12000000
+14000000
+16000000
+18000000
+20000000
+22000000
+24000000
+26000000
+28000000
+30000000
+32000000
+34000000
+36000000
+38000000
+40000000
+42000000
+44000000
+46000000
+48000000
+50000000
+52000000
+54000000
+56000000
+58000000
+60000000
+62000000
+64000000
+66000000
+68000000
+70000000
+72000000
+74000000
+76000000
+78000000
+80000000
+82000000
+84000000
+85057463
+ ...Done
+
+
+Details written to log file: /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/LOG-EpxGDM_forimputation-1000G.txt
+
+Creating variant lists
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Force-Allele1-EpxGDM_forimputation-1000G.txt
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Strand-Flip-EpxGDM_forimputation-1000G.txt
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/ID-EpxGDM_forimputation-1000G.txt
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Position-EpxGDM_forimputation-1000G.txt
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Chromosome-EpxGDM_forimputation-1000G.txt
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Exclude-EpxGDM_forimputation-1000G.txt
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/FreqPlot-EpxGDM_forimputation-1000G.txt
+
+
+Matching to 1000G
+
+Position Matches
+ ID matches 1000G 0
+ ID Doesn't match 1000G 70998
+ Total Position Matches 70998
+ID Match
+ Position different from 1000G 677207
+No Match to 1000G 1589921
+Skipped (MT) 2613
+Total in bim file 2341163
+Total processed 2340739
+
+Indels 31
+
+SNPs not changed 103046
+SNPs to change ref alt 501805
+Strand ok 354691
+Total Strand ok 604851
+
+Strand to change 351289
+Total checked 748205
+Total checked Strand 705980
+Total removed for allele Frequency diff > 0.2 58634
+Palindromic SNPs with Freq > 0.4 712
+
+
+Non Matching alleles 41517
+ID and allele mismatching 27075; where 1000G is . 0
+Duplicates removed 393
+
+
+Writing plink commands to: Run-plink.sh
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP1.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation
+  --exclude /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Exclude-EpxGDM_forimputation-1000G.txt
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP1
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+2341163 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+--exclude: 647342 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998054.
+647342 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP1.bed +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP1.bim +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP1.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP2.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP1
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP2
+  --update-chr
+  --update-map /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Chromosome-EpxGDM_forimputation-1000G.txt
+
+Note: --update-map [filename] + parameter-free --update-chr deprecated.  Use
+--update-chr [filename] instead.
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998054.
+647342 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--update-chr: 619181 values updated, 58026 variant IDs not present.
+--make-bed to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP2.bed +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP2.bim +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP2.fam ... 0%0%1%1%2%2%3%3%4%4%5%5%6%6%7%7%8%8%9%9%10%10%11%11%12%12%13%13%14%14%15%15%16%16%17%17%18%18%19%19%20%20%21%21%22%22%23%23%24%24%25%25%26%26%27%27%28%28%29%29%30%30%31%31%32%32%33%33%34%34%35%35%36%36%37%37%38%38%39%39%40%40%41%41%42%42%43%43%44%44%45%45%46%46%47%47%48%48%49%50%50%51%51%52%52%53%53%54%54%55%55%56%56%57%57%58%58%59%59%60%60%61%61%62%62%63%63%64%64%65%65%66%66%67%67%68%68%69%69%70%70%71%71%72%72%73%73%74%74%75%75%76%76%77%77%78%78%79%79%80%80%81%81%82%82%83%83%84%84%85%85%86%86%87%87%88%88%89%89%90%90%91%91%92%92%93%93%94%94%95%95%96%96%97%97%98%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP3.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP2
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP3
+  --update-map /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Position-EpxGDM_forimputation-1000G.txt
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+--update-map: 619181 values updated, 58026 variant IDs not present.
+Warning: Base-pair positions are now unsorted!
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998054.
+647342 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP3.bed +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP3.bim +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP3.fam ... 0%0%1%1%2%2%3%3%4%4%5%5%6%6%7%7%8%8%9%9%10%10%11%11%12%12%13%13%14%14%15%15%16%16%17%17%18%18%19%19%20%20%21%21%22%22%23%23%24%24%25%25%26%26%27%27%28%28%29%29%30%30%31%31%32%32%33%33%34%34%35%35%36%36%37%37%38%38%39%39%40%40%41%41%42%42%43%43%44%44%45%45%46%46%47%47%48%48%49%50%50%51%51%52%52%53%53%54%54%55%55%56%56%57%57%58%58%59%59%60%60%61%61%62%62%63%63%64%64%65%65%66%66%67%67%68%68%69%69%70%70%71%71%72%72%73%73%74%74%75%75%76%76%77%77%78%78%79%79%80%80%81%81%82%82%83%83%84%84%85%85%86%86%87%87%88%88%89%89%90%90%91%91%92%92%93%93%94%94%95%95%96%96%97%97%98%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP4.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP3
+  --flip /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Strand-Flip-EpxGDM_forimputation-1000G.txt
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP4
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+--flip: 322836 SNPs flipped, 28453 SNP IDs not present.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998054.
+647342 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP4.bed +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP4.bim +
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP4.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated.log.
+Options in effect:
+  --a2-allele /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/Force-Allele1-EpxGDM_forimputation-1000G.txt
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/TEMP4
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998054.
+--a2-allele: 647342 assignments made.
+647342 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 1
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+51172 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998012.
+51172 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 1
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+51172 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998012.
+51172 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr2.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 2
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr2
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+51145 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998125.
+51145 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr2.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr2.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr2.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr2.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 2
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr2
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+51145 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998125.
+51145 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr2.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr3.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 3
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr3
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+41798 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998225.
+41798 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr3.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr3.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr3.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr3.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 3
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr3
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+41798 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998225.
+41798 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr3.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr4.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 4
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr4
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+35963 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.99809.
+35963 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr4.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr4.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr4.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr4.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 4
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr4
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+35963 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.99809.
+35963 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr4.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr5.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 5
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr5
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+36725 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998117.
+36725 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr5.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr5.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr5.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr5.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 5
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr5
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+36725 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998117.
+36725 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr5.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr6.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 6
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr6
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+47869 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998022.
+47869 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr6.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr6.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr6.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr6.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 6
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr6
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+47869 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998022.
+47869 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr6.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr7.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 7
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr7
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+33555 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998019.
+33555 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr7.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr7.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr7.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr7.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 7
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr7
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+33555 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998019.
+33555 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr7.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr8.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 8
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr8
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+32665 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998212.
+32665 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr8.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr8.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr8.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr8.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 8
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr8
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+32665 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998212.
+32665 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr8.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr9.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 9
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr9
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+37397 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998083.
+37397 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr9.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr9.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr9.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr9.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 9
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr9
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+37397 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998083.
+37397 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr9.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr10.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 10
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr10
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+34498 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998085.
+34498 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr10.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr10.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr10.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr10.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 10
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr10
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+34498 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998085.
+34498 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr10.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr11.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 11
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr11
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+32524 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997984.
+32524 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr11.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr11.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr11.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr11.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 11
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr11
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+32524 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997984.
+32524 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr11.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr12.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 12
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr12
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+31315 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998104.
+31315 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr12.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr12.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr12.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr12.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 12
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr12
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+31315 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998104.
+31315 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr12.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr13.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 13
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr13
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+24848 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998176.
+24848 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr13.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr13.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr13.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr13.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 13
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr13
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+24848 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998176.
+24848 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr13.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr14.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 14
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr14
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+20430 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998071.
+20430 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr14.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr14.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr14.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr14.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 14
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr14
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+20430 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998071.
+20430 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr14.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr15.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 15
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr15
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+18730 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998177.
+18730 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr15.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr15.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr15.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr15.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 15
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr15
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+18730 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998177.
+18730 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr15.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr16.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 16
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr16
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+19619 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997931.
+19619 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr16.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr16.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr16.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr16.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 16
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr16
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+19619 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997931.
+19619 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr16.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr17.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 17
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr17
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+17356 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997844.
+17356 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr17.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr17.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr17.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr17.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 17
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr17
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+17356 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997844.
+17356 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr17.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr18.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 18
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr18
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+20606 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998164.
+20606 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr18.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr18.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr18.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr18.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 18
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr18
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+20606 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998164.
+20606 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr18.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr19.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 19
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr19
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+13090 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.996957.
+13090 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr19.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr19.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr19.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr19.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 19
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr19
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+13090 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.996957.
+13090 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr19.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr20.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 20
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr20
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+15864 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997951.
+15864 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr20.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr20.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr20.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr20.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 20
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr20
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+15864 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997951.
+15864 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr20.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr21.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 21
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr21
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+8872 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.99794.
+8872 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr21.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr21.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr21.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr21.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 21
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr21
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+8872 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.99794.
+8872 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr21.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr22.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 22
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr22
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+8945 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997403.
+8945 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr22.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr22.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr22.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr22.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 22
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr22
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+8945 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.997403.
+8945 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr22.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr23.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 23
+  --make-bed
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr23
+  --real-ref-alleles
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+12356 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998457.
+12356 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr23.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr23.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr23.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr23.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated
+  --chr 23
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr23
+  --real-ref-alleles
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+12356 out of 647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998457.
+12356 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr23.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b6.6 64-bit (12 Oct 2018)           www.cog-genomics.org/plink/1.9/
+(C) 2005-2018 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.log.
+Options in effect:
+  --bfile /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation-updated-chr1
+  --merge-list /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.txt
+  --out /disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation
+  --recode vcf
+
+515902 MB RAM detected; reserving 257951 MB for main workspace.
+Performing single-pass merge (525 people, 647342 variants).
+Pass 1: fileset #1 complete.Pass 1: fileset #2 complete.Pass 1: fileset #3 complete.Pass 1: fileset #4 complete.Pass 1: fileset #5 complete.Pass 1: fileset #6 complete.Pass 1: fileset #7 complete.Pass 1: fileset #8 complete.Pass 1: fileset #9 complete.Pass 1: fileset #10 complete.Pass 1: fileset #11 complete.Pass 1: fileset #12 complete.Pass 1: fileset #13 complete.Pass 1: fileset #14 complete.Pass 1: fileset #15 complete.Pass 1: fileset #16 complete.Pass 1: fileset #17 complete.Pass 1: fileset #18 complete.Pass 1: fileset #19 complete.Pass 1: fileset #20 complete.Pass 1: fileset #21 complete.Pass 1: fileset #22 complete.                                              Merged fileset written to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.bed
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.bim
++
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.fam
+.
+647342 variants loaded from .bim file.
+525 people (0 males, 525 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 525 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998054.
+647342 variants and 525 people pass filters and QC.
+Note: No phenotypes present.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to
+/disks/PROJECT/EpxGDM_TobyAndrew/data/03-qc_plink/tmp/EpxGDM_forimputation.vcf
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+# SC, guessed strand convention
+SC	TOP-compatible	0
+SC	BOT-compatible	0
+# ST, substitution types
+ST	A>C	27792	4.3%
+ST	A>G	118333	18.3%
+ST	A>T	304	0.0%
+ST	C>A	31742	4.9%
+ST	C>G	478	0.1%
+ST	C>T	145095	22.4%
+ST	G>A	144884	22.4%
+ST	G>C	576	0.1%
+ST	G>T	31538	4.9%
+ST	T>A	397	0.1%
+ST	T>C	118472	18.3%
+ST	T>G	27731	4.3%
+# NS, Number of sites:
+NS	total        	647342
+NS	ref match    	474860	73.4%
+NS	ref mismatch 	172482	26.6%
+NS	flipped      	0	0.0%
+NS	swapped      	172169	26.6%
+NS	flip+swap    	0	0.0%
+NS	unresolved   	1755	0.3%
+NS	fixed pos    	0	0.0%
+NS	skipped      	0
+NS	non-ACGT     	0
+NS	non-SNP      	0
+NS	non-biallelic	0
+Lines   total/split/realigned/skipped:	645587/0/0/0
+  |                                                                              |................................................................      |  91%
+  ordinary text without R code
+
+  |                                                                              |................................................................      |  92%
+label: qc-summary (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |.................................................................     |  93%
+   inline R code fragments
+
+  |                                                                              |..................................................................    |  94%
+label: qc-summary-table
+  |                                                                              |..................................................................    |  95%
+  ordinary text without R code
+
+  |                                                                              |...................................................................   |  96%
+label: output-exclusion (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |....................................................................  |  97%
+  ordinary text without R code
+
+  |                                                                              |..................................................................... |  98%
+label: softwares-version (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..................................................................... |  99%
+   inline R code fragments
+
+  |                                                                              |......................................................................| 100%
+label: session-info (with options) 
+List of 1
+ $ results: chr "markup"
+
+
+output file: /disks/DATATMP/EpxGDM_TobyAndrew/03-qc_plink/03-qc_plink.knit.md
+
+/usr/lib/rstudio-server/bin/pandoc/pandoc +RTS -K512m -RTS /disks/DATATMP/EpxGDM_TobyAndrew/03-qc_plink/03-qc_plink.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output /disks/PROJECT/EpxGDM_TobyAndrew/reports/EpxGDM_OMNI2.5_QC.html --email-obfuscation none --self-contained --wrap preserve --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /usr/local/lib/R/site-library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:simplex' --include-in-header /tmp/Rtmp05N4px/rmarkdown-str1ca8523d53009.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua 
+
+Output created: reports/EpxGDM_OMNI2.5_QC.html

@@ -1,0 +1,49 @@
+
+
+processing file: 04-qc_impute.Rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |......                                                                |   8%
+   inline R code fragments
+
+  |                                                                              |............                                                          |  17%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..................                                                    |  25%
+  ordinary text without R code
+
+  |                                                                              |.......................                                               |  33%
+label: read (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |.............................                                         |  42%
+  ordinary text without R code
+
+  |                                                                              |...................................                                   |  50%
+label: genomewide-af
+  |                                                                              |.........................................                             |  58%
+  ordinary text without R code
+
+  |                                                                              |...............................................                       |  67%
+label: genomewide-info
+  |                                                                              |....................................................                  |  75%
+  ordinary text without R code
+
+  |                                                                              |..........................................................            |  83%
+label: chromosome
+  |                                                                              |................................................................      |  92%
+  ordinary text without R code
+
+  |                                                                              |......................................................................| 100%
+label: session-info (with options) 
+List of 1
+ $ results: chr "markup"
+
+
+output file: /disks/DATATMP/EpxGDM_TobyAndrew/04-qc_impute/04-qc_impute.knit.md
+
+/usr/lib/rstudio-server/bin/pandoc/pandoc +RTS -K512m -RTS /disks/DATATMP/EpxGDM_TobyAndrew/04-qc_impute/04-qc_impute.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash+smart --output /disks/PROJECT/EpxGDM_TobyAndrew/reports/EpxGDM_OMNI2.5_IMPUTE_QC.html --email-obfuscation none --self-contained --wrap preserve --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /usr/local/lib/R/site-library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:simplex' --include-in-header /tmp/RtmpoVEZei/rmarkdown-str151f6276749c4.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua 
+
+Output created: reports/EpxGDM_OMNI2.5_IMPUTE_QC.html
+There were 46 warnings (use warnings() to see them)

@@ -1,0 +1,33 @@
+here() starts at /project
+There was an error in 'add_p()/add_difference()' for variable 'DNAduo', p-value omitted:
+Error in stats::fisher.test(c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, : 'x' and 'y' must have at least 2 levels
+There was an error in 'add_p()/add_difference()' for variable 'GDMwk', p-value omitted:
+Error in t.test.formula(GDMwk ~ as.factor(GDM), data = structure(list(: grouping factor must have exactly 2 levels
+There was an error in 'add_p()/add_difference()' for variable 'gluc0hfirstabn', p-value omitted:
+Error in t.test.formula(gluc0hfirstabn ~ as.factor(GDM), data = structure(list(: grouping factor must have exactly 2 levels
+There was an error in 'add_p()/add_difference()' for variable 'gluc1hfirstabn', p-value omitted:
+Error in t.test.formula(gluc1hfirstabn ~ as.factor(GDM), data = structure(list(: grouping factor must have exactly 2 levels
+There was an error in 'add_p()/add_difference()' for variable 'gluc2hfirstabn', p-value omitted:
+Error in t.test.formula(gluc2hfirstabn ~ as.factor(GDM), data = structure(list(: grouping factor must have exactly 2 levels
+There was an error in 'add_p()/add_difference()' for variable 'gluc0hCtrl24wk', p-value omitted:
+Error in t.test.formula(gluc0hCtrl24wk ~ as.factor(GDM), data = structure(list(: grouping factor must have exactly 2 levels
+There was an error in 'add_p()/add_difference()' for variable 'gluc1hCtrl24wk', p-value omitted:
+Error in t.test.formula(gluc1hCtrl24wk ~ as.factor(GDM), data = structure(list(: grouping factor must have exactly 2 levels
+There was an error in 'add_p()/add_difference()' for variable 'gluc2hCtrl24wk', p-value omitted:
+Error in t.test.formula(gluc2hCtrl24wk ~ as.factor(GDM), data = structure(list(: grouping factor must have exactly 2 levels
+There was an error in 'add_p()/add_difference()' for variable 'dgkotiseuranta', p-value omitted:
+Error in stats::fisher.test(c(NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, : 'x' and 'y' must have at least 2 levels
+Rows: 724,671
+Columns: 1,243
+Delimiter: ","
+chr [   1]: cpg_id
+dbl [1242]: 3116c, 3116m, 4179m, 4179c, 4132m, 4132c, 4224c, 4224m, 447c, 447m, 4312m, 4312c, ...
+
+Use `spec()` to retrieve the guessed column specification
+Pass a specification to the `col_types` argument to quiet this message
+trying URL 'https://storage.googleapis.com/gtex_analysis_v8/rna_seq_data/GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz'
+Content type 'application/octet-stream' length 6952331 bytes (6.6 MB)
+==================================================
+downloaded 6.6 MB
+
+Success!

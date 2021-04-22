@@ -1,0 +1,20 @@
+here() starts at /disks/PROJECT/EpxGDM_TobyAndrew
+There was an error in 'add_p()' for variable 'GDMwk', p-value omitted:
+Error in wilcox.test.formula(data[[variable]] ~ as.factor(data[[by]])): grouping factor must have exactly 2 levels
+There was an error in 'add_p()' for variable 'GDMpharmacologytreated', p-value omitted:
+Error in stats::chisq.test(data[[variable]], as.factor(data[[by]])): 'x' and 'y' must have at least 2 levels
+There was an error in 'add_p()' for variable 'gluc0hfirstabn', p-value omitted:
+Error in wilcox.test.formula(data[[variable]] ~ as.factor(data[[by]])): grouping factor must have exactly 2 levels
+There was an error in 'add_p()' for variable 'gluc1hfirstabn', p-value omitted:
+Error in wilcox.test.formula(data[[variable]] ~ as.factor(data[[by]])): grouping factor must have exactly 2 levels
+There was an error in 'add_p()' for variable 'gluc2hfirstabn', p-value omitted:
+Error in wilcox.test.formula(data[[variable]] ~ as.factor(data[[by]])): grouping factor must have exactly 2 levels
+There was an error in 'add_p()' for variable 'gluc0hCtrl24wk', p-value omitted:
+Error in wilcox.test.formula(data[[variable]] ~ as.factor(data[[by]])): grouping factor must have exactly 2 levels
+There was an error in 'add_p()' for variable 'gluc1hCtrl24wk', p-value omitted:
+Error in wilcox.test.formula(data[[variable]] ~ as.factor(data[[by]])): grouping factor must have exactly 2 levels
+There was an error in 'add_p()' for variable 'gluc2hCtrl24wk', p-value omitted:
+Error in wilcox.test.formula(data[[variable]] ~ as.factor(data[[by]])): grouping factor must have exactly 2 levels
+There was an error in 'add_p()' for variable 'dgkotiseuranta', p-value omitted:
+Error in stats::fisher.test(data[[variable]], as.factor(data[[by]])): 'x' and 'y' must have at least 2 levels
+Success!
