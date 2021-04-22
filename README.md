@@ -1,5 +1,7 @@
 # Epx-GDM
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4707911.svg)](https://doi.org/10.5281/zenodo.4707911)
+
 This repository contains all scripts used to perform the analyses described in the manuscript entitled: "**_Epigenome Wide Association Study Reveals Methylation Loci Associated with Offspring Gestational Diabetes Mellitus Exposure and Maternal Methylome_**" from Canouil et al., 2021.
 
 Scripts were executed using the following Docker images stored on [Docker Hub](https://hub.docker.com/repository/docker/umr1283/stat/):
